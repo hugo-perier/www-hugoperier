@@ -10,12 +10,33 @@
 <body>
   <header>
     <h1>Communication & design</h1>
-    <a class="cta" href="https://www.behance.net/hugoprier">Voir mes projets</a>
     <p>
       J’ai commencé à étudier les arts et le design dès le lycée par le biais d’un bac STI arts appliqués. J’ai continué dans cette voie avec un BTS design graphique, puis me suis spécialisé dans le web grâce à une licence. J’aime penser l'image de marque et construire des interfaces centrées sur l'utilisateur. Dans mon travail je favorise la co-création, le prototypage et les tests afin de mieux résoudre les problèmes. Je pratique la méthodologie Design Sprint et les méthodes agiles.
     </p>
+    <a class="cta" href="https://www.behance.net/hugoprier">Voir mes projets</a>
     <p>Vous pouvez <a href="mailto:hugo.nathan.perier@gmail.com">me joindre par e-mail</a> pour me parler de votre projet.</p>
     <p>À bientôt !</p>
   </header>
+  <main>
+    <ul class="rslides">
+      <li><a href="#"><img src="img/fe-1.jpg" alt=""></a></li>
+      <li><a href="#"><img src="img/fe-2.jpg" alt=""></a></li>
+      <li><a href="#"><img src="img/fe-3.gif" alt=""></a></li>
+    </ul>
+  </main>
+  <script src="jquery.min.js"></script>
+  <script src="responsiveslides.min.js"></script>
+  <script>
+    $(function() {
+      $(".rslides").responsiveSlides({
+        auto: false,
+        nav: true,
+        nextText: "→",
+        prevText: "←",
+        random: true,
+        speed: 200,
+      });
+    });
+  </script>
 </body>
 </html>
