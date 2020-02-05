@@ -14,10 +14,6 @@ body{
   }
 }
 
-header{
-  max-width: 20em;
-}
-
 .cta{
   background-color: #2ed573;
   border-radius: .25em;
@@ -33,14 +29,6 @@ a{
 p{
   display: block;
   margin-top: 2em;
-}
-
-main{
-  height: 70vh;
-  left: 50vw;
-  position: absolute;
-  top: 15vh;
-  width: 75vw;
 }
 
 .rslides, .rslides li, .rslides li a{
@@ -67,6 +55,41 @@ img{
 }
 
 .rslides_nav{
-  padding: .35em;
+  padding: .5em .35em;
   text-decoration: none;
+}
+
+@media screen and (max-width: 800px){
+  .rslides{
+    height: 15em;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1150px){
+  header{
+    width: 40vw;
+  }
+
+  main{
+    height: 70vh;
+    left: 50vw;
+    position: absolute;
+    top: 15vh;
+    width: 75vw;
+  }
+}
+
+@media screen and (min-width: 1150px){
+  header{
+    width: 20em;
+  }
+
+  main{
+    height: 70vh;
+    left: 30em;
+    position: absolute;
+    top: 15vh;
+    width: 75vw;
+  }
 }
